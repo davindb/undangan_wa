@@ -29,7 +29,7 @@ try:
         f"""
         <div>
             <button id="copyButton" onclick="copyText()" style="display:none;margin-bottom:10px;">
-                📋 Salin Undangan
+                📋 Copy Undangan
             </button>
             <script>
                 // Delay display for 1 second
@@ -39,9 +39,9 @@ try:
 
                 function copyText() {{
                     navigator.clipboard.writeText("{escaped_text}").then(function() {{
-                        alert("✅ Teks berhasil disalin ke clipboard!");
+                        alert("✅ Teks berhasil di copy!");
                     }}, function(err) {{
-                        alert("❌ Gagal menyalin teks.");
+                        alert("❌ Gagal meng-copy teks.");
                     }});
                 }}
             </script>
